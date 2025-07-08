@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NewsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back" />
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="45dp"
+                android:text="News &amp; Updates"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <!-- Bell Icon -->
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:contentDescription="Notifications"
+            android:src="@drawable/ic_notification" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:background="#4858f0"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_news"
+            android:background="@drawable/circle_light"
+            android:padding="16dp"
+            app:tint="@android:color/white"
+            android:contentDescription="New Icon"
+            />
+
+        <TextView
+            android:id="@+id/stayUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay Updated"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/newsSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest news and announcements from STc"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_bar_background"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/all_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="center"
+            android:text="All"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_blue_bg"
+            />
+
+        <TextView
+            android:id="@+id/tab_announce"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="center"
+            android:text="Announcement"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tab_Event"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="center"
+            android:text="Events"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tab_Urgent"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="center"
+            android:text="Urgent"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:background="@android:color/transparent"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:text="Sample News Title" />
+    </LinearLayout>
+
+</LinearLayout>

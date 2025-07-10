@@ -1,9 +1,12 @@
-package com.STc.socialtechnocrats;
+package com.STc.socialtechnocrats.models;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.STc.socialtechnocrats.EventRegistationFragment;
+import com.STc.socialtechnocrats.JoinTeamFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fa) {

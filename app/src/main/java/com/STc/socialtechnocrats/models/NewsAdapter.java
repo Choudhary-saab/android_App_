@@ -1,4 +1,4 @@
-package com.STc.socialtechnocrats;
+package com.STc.socialtechnocrats.models;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.STc.socialtechnocrats.sampledata.NewsItem;
+import com.STc.socialtechnocrats.R;
 
 import java.util.ArrayList;
 import java.util.List;

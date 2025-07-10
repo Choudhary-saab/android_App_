@@ -34,8 +34,8 @@ public class Login_Activity extends AppCompatActivity {
     ProgressBar progressBar;
     RelativeLayout loadingOverlay;
 
-    String LOGIN_URL = "http://192.168.1.36/stc_backend/login.php";        // your local XAMPP URL
-    String ROLE_CHECK_URL = "http://192.168.1.36/stc_backend/checkRole.php";
+    String LOGIN_URL = "http://192.168.1.33/stc_backend/login.php";        // your local XAMPP URL
+    String ROLE_CHECK_URL = "http://192.168.1.33/stc_backend/checkRole.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

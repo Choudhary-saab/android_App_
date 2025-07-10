@@ -8,11 +8,20 @@ import android.widget.TextView;
 
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.STc.socialtechnocrats.models.NewsAdapter;
+import com.STc.socialtechnocrats.models.NewsItem;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class NewsFragment extends Fragment {
+
+    RecyclerView recyclerView;
+    NewsAdapter adapter;
+    List<NewsItem> newsList;
 
     TextView tabAll, tabAnnouncements, tabEvents, tabUrgent;
     public NewsFragment(){
@@ -28,8 +37,20 @@ public class NewsFragment extends Fragment {
         tabEvents=view.findViewById(R.id.tab_Event);
         tabUrgent=view.findViewById(R.id.tab_Urgent);
 
+        recyclerView = view.findViewById(R.id.newsRecycler);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
         selectTab(tabAll, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
-        loadFragment(new)
+        newsList = Arrays.asList(
+                new NewsItem("Hackathon 2025", "Events", "STC Hackathon is back!", "9 July 2025"),
+                new NewsItem("Meeting at 4PM", "Announcement", "All members must attend.", "7 July 2025"),
+                new NewsItem("Exam Delayed", "Urgent", "All exams shifted by 2 days", "5 July 2025")
+        );
+
+        adapter = new NewsAdapter(newsList);
+        recyclerView.setAdapter(adapter);
+
+        adapter.filterBy("All"); // default filter
 
         tabAll.setOnClickListener(new View.OnClickListener() {
             @Override

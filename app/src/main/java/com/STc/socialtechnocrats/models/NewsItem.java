@@ -1,4 +1,4 @@
-package com.STc.socialtechnocrats.sampledata;
+package com.STc.socialtechnocrats.models;
 public class NewsItem {
     private String title;
     private String category;

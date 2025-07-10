@@ -1,10 +1,16 @@
-package com.STc.socialtechnocrats;
+package com.STc.socialtechnocrats.models;
 
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.STc.socialtechnocrats.EventFragment;
+import com.STc.socialtechnocrats.GalleryFragment;
+import com.STc.socialtechnocrats.HomeFragment;
+import com.STc.socialtechnocrats.NewsFragment;
+import com.STc.socialtechnocrats.TeamFragment;
 
 public class HomePagerAdapter extends FragmentStateAdapter {
 

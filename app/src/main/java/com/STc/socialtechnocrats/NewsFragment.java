@@ -51,10 +51,12 @@ public class NewsFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         adapter.filterBy("All"); // default filter
+        selectTab(tabAll, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
 
         tabAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.filterBy("All");
                 selectTab(tabAll, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
             }
         });
@@ -62,6 +64,7 @@ public class NewsFragment extends Fragment {
         tabAnnouncements.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.filterBy("Announcements");
                 selectTab(tabAnnouncements, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
             }
         });
@@ -69,6 +72,7 @@ public class NewsFragment extends Fragment {
         tabEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.filterBy("Events");
                 selectTab(tabEvents, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
             }
         });
@@ -76,6 +80,7 @@ public class NewsFragment extends Fragment {
         tabUrgent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.filterBy("Urgent");
                 selectTab(tabUrgent, Arrays.asList(tabAnnouncements, tabEvents, tabUrgent));
             }
         });

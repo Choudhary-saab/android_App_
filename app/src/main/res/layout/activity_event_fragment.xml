@@ -30,10 +30,69 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/tab_bar_background"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/all_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="12dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="All"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_blue_bg"
+                />
+
+            <TextView
+                android:id="@+id/tab_cultural"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="12dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="Cultural"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tab_Technical"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="12dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="Technical"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tab_Sports"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="12dp"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:text="Sports"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:background="@android:color/transparent"
+                />
+
+
         </LinearLayout>
+
     </HorizontalScrollView>
 
     <!-- Event List -->

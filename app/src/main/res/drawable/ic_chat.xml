@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Blue background circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256,0C397.4,0 512,114.6 512,256C512,397.4 397.4,512 256,512C114.6,512 0,397.4 0,256C0,114.6 114.6,0 256,0Z" />
+
+
+    <!-- Left chat bubble -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M176,192C176,174.3 189.3,160 206.7,160H320C337.7,160 352,174.3 352,192V256C352,273.7 337.7,288 320,288H208L160,320L176,288C176,288 176,209.6 176,192Z" />
+
+
+
+</vector>
